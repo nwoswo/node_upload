@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+
+<body>
+
+
+    <!--  SINGLE FILE -->
+    uploadfile-gcs
+  <form action="/uploadfile-gcs" enctype="multipart/form-data" method="POST">
+    <input type="file" name="myFile" />
+    <input type="submit" value="Upload a file" />
+  </form>
+  <br>
+    <!-- MULTIPLE FILES -->
+    uploadmultiple
+    <form action="/uploadmultiple-gcs" enctype="multipart/form-data" method="POST">
+      Select images: <input type="file" name="myFiles" multiple>
+      <input type="submit" value="Upload your files" />
+    </form>
+    <br>
+
+  <!--  SINGLE FILE -->
+  uploadfile
+  <form action="/uploadfile" enctype="multipart/form-data" method="POST">
+    <input type="file" name="myFile" />
+    <input type="submit" value="Upload a file" />
+  </form>
+  <br>
+
+  <!-- MULTIPLE FILES -->
+  uploadmultiple
+  <form action="/uploadmultiple" enctype="multipart/form-data" method="POST">
+    Select images: <input type="file" name="myFiles" multiple>
+    <input type="submit" value="Upload your files" />
+  </form>
+  <br>
+
+  uploadfile-bd
+  <form action="/uploadfile-bd" enctype="multipart/form-data" method="POST">
+    <input type="file" name="myFile" />
+    <input type="submit" value="Upload a file" />
+  </form>
+  <br>
+</body>
+
+</html>
